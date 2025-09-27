@@ -220,7 +220,7 @@ public class UserController {
 
 
     //Fetching a contestant
-    @GetMapping("/all-contestants/{id}")
+    @GetMapping("/all-contestants/{userId}")
     public ResponseEntity<ContestantResponse> getContestantById(@PathVariable String userId) {
         return ResponseEntity.ok(contestantService.getContestantByUserId(userId));
     }
